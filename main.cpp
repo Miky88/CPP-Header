@@ -1,5 +1,4 @@
 #include <iostream>
-#include <iterator>
 using namespace std;
 
 int header(string array[], int size, int columns = 40) {
