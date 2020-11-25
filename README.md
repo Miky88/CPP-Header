@@ -16,5 +16,5 @@ string header_array[] = {
   You need to pass the array with header strings, the number of lines the array has and an optional columns fixing value.
 */
 
-header(header_array, 3, 50);
+header(header_array, 3);
 ```
