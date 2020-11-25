@@ -6,6 +6,7 @@ int header(string array[], int size, int columns = 40) {
 	for (int i=1; i<=columns; i++) cout << char (205);
 	cout << char (187) << endl;
 	for (int i=0; i<size; i++) {
+		if(array[i].length() % 2 == 1) array[i] += " ";
 		cout << char (186);
 		for (int j=0; j <=(columns-2)/2-array[i].length()/2; j++) cout << char(32);
 		cout << array[i];
@@ -22,7 +23,7 @@ int main () {
 	string head[] = {
 		"Hello World!",
 		"Hello everybody!",
-		"Hello World! Hello World! Hello World!"
+		"Hello World! Hello World! Hello World"
 	};
 	
 	header(head, 3);
