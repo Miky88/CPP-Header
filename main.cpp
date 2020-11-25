@@ -1,7 +1,12 @@
 #include <iostream>
 using namespace std;
 
-int header(string array[], int size, int columns = 40) {
+int header(string array[], int size) {
+	int columns = 10;
+	for (int i=0; i<size; i++) {
+		if(columns < array[i].length() + 5 && array[i].length() % 2 == 1) columns = array[i].length() + 5;
+		else if (columns < array[i].length() + 5 && array[i].length() % 2 == 0) columns = array[i].length() + 6;
+	}
 	cout << char (201);
 	for (int i=1; i<=columns; i++) cout << char (205);
 	cout << char (187) << endl;
@@ -23,7 +28,7 @@ int main () {
 	string head[] = {
 		"Hello World!",
 		"Hello everybody!",
-		"Hello World! Hello World! Hello World"
+		"Hello World! This is a sample text!"
 	};
 	
 	header(head, 3);
