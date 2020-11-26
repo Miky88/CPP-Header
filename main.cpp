@@ -31,5 +31,5 @@ int main () {
 		"Hello World! This is a sample text!"
 	};
 	
-	header(head, 3);
+	header(head, sizeof(head)/sizeof(head[0]));
 }
