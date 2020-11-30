@@ -5,7 +5,7 @@ Create nice-looking headers in C++ using this function that automatically takes 
 
 ## How to use
 ```cpp
-string header_array[] = {
+string head[] = {
   "Hello World!",
   "This is a sample text!",
   "Put whatever here.",
