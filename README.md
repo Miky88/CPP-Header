@@ -13,7 +13,7 @@ string header_array[] = {
 };
 
 /*
-  You need to pass the array with header strings, the number of lines the array has and an optional columns fixing value.
+  You need to pass the array with header strings and the number of lines the array has
 */
 
 header(head, sizeof(head)/sizeof(head[0]));
